@@ -47,7 +47,7 @@ public class InhaalExamenController {
         if(repository.getKey(inhaalExamen.getStudent()) != null) {
             return "Already exists";
         }
-        repository.setKey(inhaalExamen.getStudent(), inhaalExamen.toString());
+        //repository.setKey(inhaalExamen.getStudent(), inhaalExamen.toString());
         Map<String, String> map = new HashMap<>();
         map.put(inhaalExamen.getStudent(), null);
         repository.hset(student, map);
