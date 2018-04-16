@@ -2,6 +2,7 @@ package edu.ap.spring.model;
 
 import java.time.LocalDate;
 
+
 public class InhaalExamen {
  
     private String student;
@@ -58,4 +59,14 @@ public class InhaalExamen {
 	public void setReason(String reason) {
 		this.reason = reason;
 	}
+
+    @Override
+    public String toString() {
+        return "InhaalExamen{" +
+                "student='" + student + '\'' +
+                ", exam='" + exam + '\'' +
+                ", date='" + date + '\'' +
+                ", reason='" + reason + '\'' +
+                '}';
+    }
 }
